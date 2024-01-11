@@ -5,6 +5,7 @@ function solution(hp) {
     for(let i = 0; i < ant.length; i++) {
         count += Math.floor(hp/ant[i])
         // 위 수식에서 나머지값을 다음 i값과 나눠주는 코드
+        // 나머지값을 hp에 저장
         hp %=ant[i]
     }
     return count
