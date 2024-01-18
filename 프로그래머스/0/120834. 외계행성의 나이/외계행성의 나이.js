@@ -13,5 +13,4 @@ function solution(age) {
     }
     const ages = String(age)
     return [...ages].map((el)=>obj[el]).join('')
-    
 }
