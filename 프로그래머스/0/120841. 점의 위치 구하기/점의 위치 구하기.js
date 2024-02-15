@@ -1,11 +1,5 @@
 function solution(dot) {
-    if (Math.sign(dot[0]) === 1 && Math.sign(dot[1]) === 1) {
-        return 1
-    } else if (Math.sign(dot[0]) === -1 && Math.sign(dot[1]) === 1) {
-        return 2
-    } else if (Math.sign(dot[0]) === -1 && Math.sign(dot[1]) === -1) {
-        return 3
-    } else {
-        return 4
-    }
+    const [num1, num2] = dot;
+    const check = num1 * num2 > 0;
+    return num1 > 0 ? (check ? 1 : 4) : (check ? 3 : 2);
 }
