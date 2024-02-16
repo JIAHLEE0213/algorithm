@@ -1,4 +1,3 @@
 function solution(n) {
-    const newArr = [...String(n)].map(Number);
-    return newArr.reduce((acc, cur) => acc+cur);
+    return [...String(n)].reduce((acc,cur) => acc + Number(cur),0);
 }
