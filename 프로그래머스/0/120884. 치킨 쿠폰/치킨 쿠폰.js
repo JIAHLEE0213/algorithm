@@ -3,7 +3,7 @@ function solution(chicken) {
     
     while(chicken >= 10) {
         result += Math.floor(chicken/10);
-        // 치킨을 시킨만큼 쿠폰을 더 받는 것과 나머지 쿠폰갯수를 더해주기
+        // 서비스 치킨으로 한마리를 더 시킬수 있는 값과 나머지 값 더해주기
         chicken = Math.floor(chicken/10) + chicken % 10;
     }
     
