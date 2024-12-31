@@ -10,6 +10,7 @@ function solution(n) {
             n = 3 * n + 1;
         }
     } 
+    
     result.push(1);
     return result;
 }
